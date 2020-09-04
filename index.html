@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+	<link rel="icon" href="img/gssmlogo.jpg" sizes="16x16">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+<style>
+/* Center the loader */
+#loader {
+  position: absolute;
+  left: 50%;
+	background-color: gray;
+  top: 50%;
+  z-index: 1;
+  width: 150px;
+  height: 150px;
+  margin: -75px 0 0 -75px;
+  border: 16px solid #f3f3f3;
+  border-radius: 50%;
+  border-top: 16px solid #003467;
+  border-right: 16px solid #A7A9AC;
+  border-bottom: 16px solid #003467;
+  border-left: 16px solid #A7A9AC;
+  width: 120px;
+  height: 120px;
+  -webkit-animation: spin 2s linear infinite;
+  animation: spin 2s linear infinite;
+}
+
+@-webkit-keyframes spin {
+  0% { -webkit-transform: rotate(0deg); }
+  100% { -webkit-transform: rotate(360deg); }
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+/* Add animation to "page content" */
+.animate-bottom {
+  position: relative;
+  -webkit-animation-name: animatebottom;
+  -webkit-animation-duration: 1s;
+  animation-name: animatebottom;
+  animation-duration: 1s
+}
+
+@-webkit-keyframes animatebottom {
+  from { bottom:-100px; opacity:0 }
+  to { bottom:0px; opacity:1 }
+}
+
+@keyframes animatebottom {
+  from{ bottom:-100px; opacity:0 }
+  to{ bottom:0; opacity:1 }
+}
+
+#myDiv {
+  display: none;
+  text-align: center;
+}
+h1 {
+    text-align: center;
+
+}
+
+</style>
+</head>
+<body onload="myFunction()" style="margin:0;">
+<h1 id="loaderw"> 🦅 Welcome to Ask A Govie! 🦅 </h1>
+<div id="loader"></div>
+
+
+<div style="display:none;" id="myDiv" class="animate-bottom">
+<head>
+
+
+
+	<meta charset="UTF-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+
+	<!-- SEO -->
+	<title> Ask A Govie </title>
+	<meta name="description" content="Split is a centrally-divided layout for a professional online presence with a big image or video left with alongside content." />
+	<meta name="robots" content="index, follow" />
+	<meta name="referrer" content="always" />
+
+	<!-- Social & Open Graph -->
+	<meta property="og:title" content="" />
+	<meta property="og:description" content="" />
+	<meta property="og:image" content="https://pbs.twimg.com/profile_images/966458686540517377/M-vXSwjw_400x400.jpg"> <!-- include your hosted image full URL -->
+	<meta property="og:url" content="https://demo.onepagelove.com/fullsingle-html/split/" />
+	<meta name="twitter:title" content="Split - HTML Template Demo" >
+	<meta name="twitter:description" content="Split is a centrally-divided layout for a professional online presence with a big image or video left with alongside content." />
+	<meta name="twitter:image" content="" /> <!-- include your hosted image full URL -->
+	<meta name="twitter:card" content="summary_large_image" />
+	<meta name="twitter:site" content="@onepagelove" />
+	<meta name="twitter:creator" content="@robhope" />
+
+	<!-- Favicon -->
+	<link rel="icon" type="image/png" href="Group.jpg" sizes="32x32">
+
+	<!-- Styles -->
+	<link rel='stylesheet' href='Home/assets/css/split.css' type='text/css' media='screen' />
+	<meta name="viewport" content="width=device-width,initial-scale=1" />
+
+</head>
+
+<body id="fullsingle" class="page-template-page-fullsingle-split">
+
+<div class="fs-split">
+
+	<!-- Image Side -->
+	<div class="split-image">
+
+	</div>
+
+	<!-- Content Side -->
+	<div class="split-content">
+
+		<div class="split-content-vertically-center">
+
+			<div class="split-intro">
+
+				<!--<h1>Welcome! </h1>-->
+
+				<span class="tagline">Welcome to Ask a Govie! </span>
+
+			</div>
+
+			<div class="split-bio">
+<ul>
+		<!--		<li> <a href="index.html" > Home Page </a></li>
+				<li> <a href="pages/services.html" > Services We Offer </a> </li>
+				<li> <a href="pages/staff.html" > Our Staff </a> </li>
+				<li> <a href="pages/customerservice.html" > Customer Service </a> </li>
+		  		<li> <a href="pages/mission.html" > Our Mission and Company History </a> </li>
+				<li> <a href="pages/pricing.html" > Our Prices </a> </li>
+				<li> <a href="copyright.html" > Copyright </a> </li>
+				<li> <a href="faqs.html" > Frequently Asked Questions </a> </li>
+				<li> <a href="interactivecalendar.html" > Interactive Calendar </a> </li> -->
+				<li> <a href="askagoviecurrentedition.html" > Click on this if you would like to ask a current govie a question. </a> </li>
+				<li> <a href="askagoviealumniedition.html" > Click on this if you would like to ask an alumni a question. </a> </li>
+</ul>
+			</div>
+
+
+
+
+		</div>
+
+	</div>
+
+</div>
+	<form action="index.html">
+  <button type="submit" class="button button5"style="vertical-align:middle">Home</button>
+  </form>
+	<style>
+		.button5 {background-color: #008CBA;
+  border: none;
+    color: white;
+    padding: 10px 14px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    transition: all 0.5s;
+    cursor: pointer;} /* Blue Buttons*/
+    .button5:hover {
+      background-color:#005a77
+    }
+	</style>
+<script>
+
+var myVar;
+
+function myFunction() {
+    myVar = setTimeout(showPage, 1500);
+}
+
+function showPage() {
+  document.getElementById("loader").style.display = "none";
+  document.getElementById("myDiv").style.display = "block";
+  document.getElementById("loaderw").style.display = "none";
+}
+</script>
+
+</body>
+</html>
